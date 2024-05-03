@@ -21,4 +21,4 @@ https://storydiffusion.github.io/
 ![image](https://github.com/camenduru/StoryDiffusion-jupyter/assets/54370274/748717a8-95b3-4b2e-9e16-d7813f86bd3b)
 
 ### 🖼 HF
-![image](https://github.com/Navezjt/StoryDiffusion-hf)
+![code](https://github.com/Navezjt/StoryDiffusion-hf)
