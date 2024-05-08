@@ -5,11 +5,16 @@
 <div align="center">
   
 ## StoryDiffusion: Consistent Self-Attention for Long-Range Image and Video Generation  [![Paper page](https://huggingface.co/datasets/huggingface/badges/resolve/main/paper-page-md-dark.svg)]()
-[[Paper](https://arxiv.org/abs/2405.01434)] &emsp; [[Project Page](https://storydiffusion.github.io/)] &emsp;  [[🤗 Comic Generation Demo ](https://huggingface.co/spaces/YupengZhou/StoryDiffusion)] <br>
+[[Paper](https://arxiv.org/abs/2405.01434)] &emsp; [[Project Page](https://storydiffusion.github.io/)] &emsp;  [[🤗 Comic Generation Demo ](https://huggingface.co/spaces/YupengZhou/StoryDiffusion)] [![Replicate](https://replicate.com/cjwbw/StoryDiffusion/badge)](https://replicate.com/cjwbw/StoryDiffusion) <br>
 
 
 </div>
 
+<div align="left">
+  
+  #### For results sharing and discussion: https://discord.gg/hSJZ35fV
+  #### For codebase and deployment-related discussion: https://discord.gg/2HFUHT9p
+</div>
 
 ---
 
@@ -23,7 +28,9 @@ Official implementation of **[StoryDiffusion: Consistent Self-Attention for Long
 https://github.com/HVision-NKU/StoryDiffusion/assets/49511209/d5b80f8f-09b0-48cd-8b10-daff46d422af
 
 
+### Update History
 
+You can visit [here](update.md) to visit update history.
 
 ### 🌠  **Key Features:**
 StoryDiffusion can create a magic story by generating consistent images and videos. Our work mainly has two parts: 
@@ -82,7 +89,7 @@ Our Image-to-Video model can generate a video by providing a sequence of user-in
 
 
 ## 🚩 **TODO/Updates**
-- [x] Commic Results of StoryDiffusion.
+- [x] Comic Results of StoryDiffusion.
 - [x] Video Results of StoryDiffusion.
 - [x] Source code of Comic Generation
 - [x] Source code of gradio demo
@@ -114,12 +121,18 @@ You can open the `Comic_Generation.ipynb` and run the code.
 Run the following command:
 
 ```python
-python gradio_app_sdxl.py
+python gradio_app_sdxl_specific_id.py
+```
+
+**(Recommend)** We provide a low GPU Memory cost version, it was tested on a machine with 24GB GPU-memory(Tesla A10) and 30GB RAM, and expected to work well with >20 G GPU-memory.
+
+```python
+python gradio_app_sdxl_specific_id_low_vram.py
 ```
 
 
-
-
+## Contact
+If you have any questions, you are very welcome to email ypzhousdu@gmail.com and zhoudaquan21@gmail.com
 
    
 
@@ -131,8 +144,9 @@ This project strives to impact the domain of AI-driven image and video generatio
 If you find StoryDiffusion useful for your research and applications, please cite using this BibTeX:
 
 ```BibTeX
-@article{Zhou2024storydiffusion,
+@article{zhou2024storydiffusion,
   title={StoryDiffusion: Consistent Self-Attention for Long-Range Image and Video Generation},
   author={Zhou, Yupeng and Zhou, Daquan and Cheng, Ming-Ming and Feng, Jiashi and Hou, Qibin},
+  journal={arXiv preprint arXiv:2405.01434},
   year={2024}
 }
